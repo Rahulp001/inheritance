@@ -22,3 +22,26 @@ public class pali_disp extends palindrome {
 	}
 
 }
+package inheritance;
+
+public class palindrome {
+           
+	public void pali(int a) 
+	{
+		int rev=0,r,temp;
+		temp=a;
+		while(a>0) 
+		{
+			r=a%10;
+			rev=(rev*10)+r;
+			a=a/10;  	
+		}
+		if(temp==rev) 
+		{
+			System.out.println(temp+" is a palindrome number");
+		}
+		else
+			System.out.println(temp+" is not a palindrome number");
+	}
+}
+
