@@ -24,3 +24,43 @@ public class multi_disp extends SOD {
 	}
 
 }
+package inheritance;
+
+import java.util.Scanner;
+
+public class SOD extends rev_num {
+	
+	
+	public void digit_sum(int a) 
+	{
+		int temp,sum=0,r;
+		temp=a;
+		while(a>0) 
+		{
+			r=a%10;
+			sum=sum+r;
+			a=a/10;
+		}
+		System.out.println(temp+" sum of digit ="+sum);
+	}
+	
+}
+package inheritance;
+
+public class rev_num {
+	
+	public void rev(int a) 
+	{
+		int temp,rev=0,r;
+		temp=a;
+		while(a>0) 
+		{
+			r=a%10;
+			rev=(rev*10)+r;
+			a=a/10;
+		}
+		System.out.println(temp+" reverse no ="+rev);
+	
+	}
+
+}
